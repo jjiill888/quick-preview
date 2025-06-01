@@ -6,8 +6,6 @@
 ## Features
 
 - Preview text files and images
-- Auto-scale large content
-- Preview folder contents (up to 100 items)
 - Display "Unsupported file type" for unknown formats
 - Exit when clicking outside the window or pressing the spacebar
 - Minimal design with no window decoration
@@ -36,21 +34,9 @@ gcc quick-preview.c -o quick-preview $(pkg-config --cflags --libs gtk+-3.0 gdk-p
 ./quick-preview <file_or_directory>
 ```
 
-## Keyboard Binding (XFCE Example)
-
-1. Go to *Settings* → *Keyboard* → *Application Shortcuts*
-2. Add a new shortcut:
-
-```bash
-quick-preview %f
-```
-
-3. Bind it to the spacebar (or another key)
-
-Make sure `%f` passes the currently selected file path.
-
 ## Roadmap
 
+- Preview folder 
 - PDF preview (Poppler)
 - Carousel for browsing sibling files
 - Archive preview
